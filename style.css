@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/*
+Theme Name: Theme for Tweet Collection
+Theme URI: https://github.com/mytory/theme-for-tweet-collection
+Author: mytory
+Author URI: https://mytory.net/
+Description: Theme for Tweet Collection WP plugin I made.
+Version: 1.0
+License: GNU General Public License v2 or later
+*/
+.page-numbers {
+    padding: 3px .5em;
+}
