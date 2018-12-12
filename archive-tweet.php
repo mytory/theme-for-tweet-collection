@@ -6,7 +6,14 @@ get_header();
 			while ( have_posts() ) {
 				the_post();
 				?>
-                <li class="list-group-item"><?php the_content(); ?></li>
+                <li class="list-group-item">
+                    <div class="float-right">
+                        <a href="<?php the_permalink() ?>">#</a>
+                    </div>
+
+                    <?php the_content(); ?>
+
+                </li>
 				<?php
 			}
 		} ?>

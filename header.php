@@ -11,4 +11,14 @@
 <body>
 <div class="container  py-5">
 
-    <h1 class="mb-5"><a href="<?= home_url('/') ?>"><?php bloginfo( 'title' ) ?></a></h1>
+    <nav class="mb-5">
+        <h1 class="mb-3"><a href="<?= home_url('/') ?>"><?php bloginfo( 'title' ) ?></a></h1>
+
+        <form id="searchform" class="search-tweets-form" method="get" action="http://work.localhost/tweets">
+            <label class="sr-only" for="s">Search Tweets</label>
+            <input type="text" value="" id="s" name="s">
+            <input type="hidden" name="post_type" value="tweet">
+            <input type="submit" value="Search Tweets" id="searchsubmit" class="btn btn-primary">
+        </form>
+
+    </nav>
