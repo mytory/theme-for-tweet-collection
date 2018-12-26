@@ -16,7 +16,7 @@
 
         <form id="searchform" class="search-tweets-form" method="get" action="http://work.localhost/tweets">
             <label class="sr-only" for="s">Search Tweets</label>
-            <input type="text" value="" id="s" name="s">
+            <input type="text" value="<?= (empty($_GET['s'])) ? '' : $_GET['s'] ?>" id="s" name="s">
             <input type="hidden" name="post_type" value="tweet">
             <input type="submit" value="Search Tweets" id="searchsubmit" class="btn btn-primary">
         </form>
